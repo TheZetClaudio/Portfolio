@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+            /*  NAVBAR  */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.65rem;   
+}
+a:hover{
+    color: yellow;
+}
+.img{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    background-image: url('/.png/5927911.gif');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.03);
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    background-color: #1299878e; 
+    backdrop-filter: blur(5px);
+    border-radius: 40px;
+    z-index: 1;
+}
+.navbar .nav-top{
+    background-color: orange;
+    border-radius: 0.9rem;
+    padding: 0.60rem 1rem;
+    margin: 30px 10px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-top:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.navbar .nav-top a{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.navbar .nav-links{
+    display: flex;
+    gap: 3rem;
+}
+.nav-links li:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.navbar .toggle-btn{
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+.log-btn{
+    background-color: orange;
+    color: white;
+    padding: 0.60rem 1rem;
+    margin: 30px 10px;
+    border: none;
+    outline: none;
+    border-radius: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.log-btn:hover{
+    scale: 1.05;
+    color: yellow;
+}
+/*  Menu    */
+.down_menu{
+    display: none;
+    position: absolute;
+    top: 80px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.down_menu.open{
+    height: 240px;
+}
+.down_menu li{
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.down_menu .log-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*  NAVBARA    */
+
+@media (max-width: 1050px){
+    .navbar .nav-links,
+    .navbar .log-btn{
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+    }
+    .down_menu{
+        display: block;
+        left: auto;
+        z-index: 1;
+    }
+}
+@media (max-width: 576px){
+    .down_menu{
+        display: block;
+        left: 2rem;
+        right: 2rem;
+        width: unset;
+        z-index: 1;
+    }
+}
+/*-------------------------------------------------------------------------------------------*/
+.mid{
+    width: 300px;
+    height: 300px;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px; 
+}
+.mid_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(110, 67, 202);
+    grid-row: 1 / 4;
+    grid-column: 2 / 6;
+}
+.zdu{
+    display: flex;
+    justify-content: center;
+    border: 5px;
+    border-radius: 50px;
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+}
+.static-txt{
+    background-color: rgb(62, 139, 175);
+    grid-row: 6/7;
+    grid-column: 1/3;
+}
+.dynamic-txt{
+    background-color: rgb(154, 154, 155);
+    grid-row: 6/7;
+    grid-column: 3/7;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/

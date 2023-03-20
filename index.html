@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/index.css">
+</head>
+        <!------------------------------------------------------------------------------------>
+<body>
+    <div class="img"></div>
+     <header>
+        
+        <div class="navbar">
+            <div class="nav-top">      
+             <a href="#" class="pho">Pieńkowski Klaudiusz</a>       
+            </div>
+
+            <div class="nav-links">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#start" >Start</a></li>
+                <li><a href="#end" >PlLL</a></li>
+            </div>
+            
+            <a href="#" class="log-btn">LOGOWANIE</a>
+
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="down_menu">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#start" >Start</a></li>
+            <li><a href="#end" >PlLL</a></li>
+            <li><a href="#" class="log-btn">LOGOWANIE</a></li>
+        </div>
+
+        
+        <div class="mid"> 
+                <div class="mid_top">
+     
+                </div>
+
+            <div class="static-txt">1 </div>
+            <div class="dynamic-txt">
+                <li><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+            </div>
+        </div>
+    </header>  
+    <!------------------------------------------------------------------------------------>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnIcon = document.querySelector('.toggle-btn i')
+        const DownMenu = document.querySelector('.down_menu')
+
+        togglebtn.onclick = function(){
+            DownMenu.classList.toggle('open')
+            const isOpen = DownMenu.classList.contains('open')
+        
+        togglebtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+    </script>
+</body>
+</html>
