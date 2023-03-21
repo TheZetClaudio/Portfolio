@@ -104,7 +104,7 @@ header{
     scale: 1.05;
     color: yellow;
 }
-/*  Menu    */
+/*   Navbar Menu   */
 .down_menu{
     display: none;
     position: absolute;
@@ -131,7 +131,6 @@ header{
     display: flex;
     justify-content: center;
 }
-/*  NAVBARA    */
 
 @media (max-width: 1050px){
     .navbar .nav-links,
@@ -157,6 +156,8 @@ header{
     }
 }
 /*-------------------------------------------------------------------------------------------*/
+
+/*   Mid   */
 .mid{
     width: 300px;
     height: 300px;
