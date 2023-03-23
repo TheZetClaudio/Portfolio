@@ -181,11 +181,13 @@ a:hover{
 /*   Mid   */
 
 .mid{
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     margin-top: 180px;
     margin-bottom: 100px;
-    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 4px;
     display: grid;
     background-color: black;
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
@@ -194,32 +196,69 @@ a:hover{
 .mid_top{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
     margin-top: 5px;
     border-radius: 10px;
-    background-color: rgb(110, 67, 202);
+    background-color: rgb(52, 18, 124);
+    overflow: hidden;
     grid-row: 1 / 4;
     grid-column: 2 / 6;
 }
 .zdu{
     display: flex;
     justify-content: center;
-    border: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: red;
     border-radius: 50px;
-    padding: 2px;
-    width: 100px;
+    width: 150px;
     height: 100px;
 }
+.hello{
+    grid-row: 4/5;
+    grid-column: 2/6;
+    color: wheat;
+    font-family: 'Brush Script MT';
+    font-size:  30px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
 .static-txt{
-    background-color: rgb(62, 139, 175);
-    grid-row: 6/7;
-    grid-column: 1/3;
+    color: wheat;
+    font-size:  20px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    grid-row: 5/6;
+    grid-column: 2/6;
 }
 .dynamic-txt{
-    background-color: rgb(154, 154, 155);
+    overflow: hidden; 
     grid-row: 6/7;
-    grid-column: 3/7;
+    grid-column: 1/7;
+    height: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: Text_animatio 2s infinite linear;
 }
+.dynamic-txt li{
+    color: wheat;
+    font-family: 'Brush Script MT';
+    font-size:  30px;  
+}
+@keyframes Text_animation{
+    0%{
+        background-position: top;
+    }
+    50%{
 
+    }
+    100%{
+    background-position: bottom;
+    }
+}
 
 /*-------------------------------------------------------------------------------------------*/
