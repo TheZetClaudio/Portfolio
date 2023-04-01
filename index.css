@@ -22,13 +22,13 @@
     width: 100vw;
     color: #333;
     background: #fff;
-    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(114, 2, 2),rgb(169, 2, 2), rgb(114, 2, 2), rgb(0, 0, 0));
+    background-image: linear-gradient(45deg, rgb(89, 224, 62), rgb(178, 218, 98),rgb(10, 238, 231), rgb(101, 156, 193), rgb(91, 61, 208));
     background-size: 300%;
     filter: blur(15px);
     position: absolute;   
     top: 100;
     z-index: -2;
-    animation: animation_bg 7s infinite linear alternate;
+    animation: animation_bg 8s infinite linear alternate;
 }
 @keyframes animation_bg{
     0%{  
@@ -237,28 +237,18 @@ a:hover{
     overflow: hidden; 
     grid-row: 6/7;
     grid-column: 1/7;
-    height: 37px;
+    height: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: Text_animatio 2s infinite linear;
+    
 }
 .dynamic-txt li{
     color: wheat;
     font-family: 'Brush Script MT';
-    font-size:  30px;  
+    font-size:  23px;  
 }
-@keyframes Text_animation{
-    0%{
-        background-position: top;
-    }
-    50%{
 
-    }
-    100%{
-    background-position: bottom;
-    }
-}
 
 /*-------------------------------------------------------------------------------------------*/
