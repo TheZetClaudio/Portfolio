@@ -66,7 +66,7 @@ a:hover{
     position: fixed;
     height: 60px;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1500px;
     margin: auto;
     margin-top: 10px;
     display: flex;
@@ -181,8 +181,8 @@ a:hover{
 /*   Mid   */
 
 .mid{
-    width: 310px;
-    height: 310px;
+    width: 450px;
+    height: 450px;
     margin-top: 180px;
     margin-bottom: 100px;
     box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
@@ -190,8 +190,8 @@ a:hover{
     padding: 4px;
     display: grid;
     background-color: black;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px; 
+    grid-template-columns: 73px 73px 73px 73px 73px 73px;
+    grid-template-rows: 73px 73px 73px 73px 73px 73px; 
 }
 .mid_top{
     display: flex;
